@@ -101,3 +101,17 @@ resource "aws_instance" "web-1" {
     CostCenter = "ABCD"
   }
 }
+resource "aws_s3_bucket" "marquise0001" {
+    bucket = "marquise0001"
+    tags =  {
+      Owner =  var.marquise_bucket_tag
+    }
+}
+resource "aws_s3_bucket" "marquise0002" {
+    bucket = "marquise0001"
+  
+}
+resource "aws_s3_bucket" "marquise000" {
+    bucket = "marquise0001"
+  
+}
